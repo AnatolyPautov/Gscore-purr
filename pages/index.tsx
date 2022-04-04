@@ -15,9 +15,9 @@ const Home: NextPage = () => {
         </h1>
 
         <div className={styles.grid}>
-          <Link href="/about">
+          <Link href="/auth">
             <a className={styles.card}>
-              <h2>About &rarr;</h2>
+              <h2>Auth &rarr;</h2>
               <p>Find in-depth information about Next.js features and API.</p>
             </a>
           </Link>
