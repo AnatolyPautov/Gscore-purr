@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "svg:transform": "./node_modules/@svgr/cli/bin/svgr --ignore-existing --typescript -d assets/icons assets/svg"
   },
   "dependencies": {
+    "@svgr/cli": "^6.2.1",
+    "@svgr/webpack": "^6.2.1",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0"
