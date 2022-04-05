@@ -1,16 +1,13 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { createContext } from "react";
-import { themes } from "../styles/colors";
+import { ThemeProvider } from "styled-components";
+import { themes } from "../themes";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const ThemeContext = createContext(themes);
-
   return (
-    <ThemeContext.Provider value={themes}>
-      <Component {...pageProps} />;
-    </ThemeContext.Provider>
+    <ThemeProvider theme={themes}>
+      <Component {...pageProps} />
+    </ThemeProvider>
   );
 }
-
 export default MyApp;
